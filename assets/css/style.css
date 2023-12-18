@@ -6,9 +6,6 @@
   margin-right: auto;
   margin-left: auto;
 }
-.compact-list {
-  word-wrap: break-word;
-}
 .personal .profile {
   border-radius: 50%;
   max-height: 12rem;
@@ -19,7 +16,11 @@
   width: 100%;
 }
 h2 {
-  font-size: 18px;
+  font-size: 1.1rem;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
 }
 .description {
   color: #666;
@@ -55,6 +56,16 @@ hr {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   margin-left: -0.5rem;
+}
+.vertical-list li:before {
+  content: "-";
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  margin-left: -0.5rem;
+}
+.compact-list {
+  word-wrap: break-word;
 }
 .compact-list li {
   padding-top: 0.25rem !important;
